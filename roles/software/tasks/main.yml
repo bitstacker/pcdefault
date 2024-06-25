@@ -1,0 +1,28 @@
+---
+- name: Install every tool i need
+  ansible.builtin.package:
+    name: {{ item }}
+    state: present
+  loop:
+    - 7zip
+    - borgmatic
+    - build-essential
+    - busybox
+    - evince
+    - evolution
+    - evolution-plugins
+    - fail2ban
+    - firefox-esr
+    - firmware-realtek
+    - fonts-inconsolata
+    - fwupd
+    - fzf
+    - gajim
+    - galculator
+    - gimp
+    - glibc
+    - gpg-agent
+    - grepcidr
+    - inkscape
+    - ipcalc-ng
+    - materia-gtk-theme
